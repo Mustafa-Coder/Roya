@@ -1,0 +1,269 @@
+
+// variables all style: 
+$fsize:13px; // font size 
+$zero:0;
+$pad:10px;  
+$mar:10px;
+$ff:'Exo 2', sans-serif;
+// colors: 
+$colorbtn:#6c5ce7; // button 
+$colortext:#b2bec3;
+$colorhead:#2d3436;
+// $colorshadow:rgb(246, 246, 246);
+$bg:#f7f7f9;
+// start style:
+
+body {
+    font-family: $ff;
+    background-color: $bg;
+}
+
+// navbar style 
+.navbar 
+{
+    padding: .5rem 7rem;
+    // brand 
+     .navbar-brand {
+        color: rgba(0,0,0,.9);
+        font-weight: 600;
+    }
+}
+
+// mobile 
+.overlay 
+{
+    position: fixed;
+    z-index: 2000;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #ffffffc9;
+    padding: 6em;
+    font-size: 30px;
+    top: 0;
+    ul {
+        li 
+        {
+            a 
+            {
+                color: black;
+            }
+        }
+    }
+}
+
+// container ./ home 
+.home 
+{
+    .habout {
+
+        // line header 
+        .btn-primary a  {
+            transition: .4s ease;
+            background-color: $colorbtn;
+            border: $colorbtn;
+        }
+
+        .btn-black a 
+        {
+            transition: .4s ease;
+            background: none;
+            color: none;
+
+        }
+
+    }
+
+    
+
+        // photo
+        .photo-person 
+        {
+            border-radius:0 !important;
+            overflow: hidden;
+            background: $zero;
+            border: $zero;
+
+            img 
+            {
+                height: 450px;
+                width: 450px;
+
+            }
+        }
+
+
+}
+
+// section ./ service 
+.services 
+{
+    // margin
+    margin-bottom: 190px;
+    .service
+    {
+        // service 
+        box-shadow: 0 0 10px $colortext;
+        transition: .4s ease; 
+        &:hover 
+        {
+            transition: .4s ease; 
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+        // img 
+        img {
+            width: 90px;
+            height: 90px;
+            margin: 2% auto;
+        }
+
+        // header 
+        h2 
+        {
+            font-size: $fsize + 5;
+            text-align: center;
+            margin: 5px;
+        }
+        
+    } // end service 
+
+    // aboutme 
+    .aboutme ul 
+    {
+        list-style: none;
+
+        li {
+            font-size: 24px;
+            padding: 7px 15px;
+            margin: $mar;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $bg;
+            
+        }
+
+        a {
+
+            transition: .4s ease; 
+            &:hover 
+            {
+                transition: .4s ease;
+                color: $colorbtn !important;
+            }
+            
+        }
+    }
+
+    // modals: 
+    #mgraphic 
+    {
+        display: none;
+    }
+
+    #mwv 
+    {
+        display: none;
+
+    }
+
+    #mwd
+    {
+        display: none;
+
+    }
+
+    .modals {
+        ul 
+        {
+            list-style-type: none;
+            li {
+                margin: auto;
+                .tech {
+                    width: 40px;
+                    height: 40px;
+                    filter: grayscale(1);
+                    transition: .4s ease; 
+                    &:hover 
+                    {
+                        transition: .4s ease;
+                        filter: grayscale(0);
+                        transform: translateY(-10px);
+                     }
+                    
+                }
+            }
+        }
+    }
+} // end services  
+
+.contact 
+{ // contact 
+    margin-bottom:120px;
+    .contact 
+    {
+        width: 100%;
+    }
+
+    ul 
+    {
+        list-style-type: none;
+        li 
+        {
+            margin-left: 25px;
+            a 
+            {
+                img 
+                {
+                    width: 70px;
+                    filter: grayscale(1);
+                    transition: .4s ease; 
+                    &:hover 
+                    {
+                        transition: .4s ease;
+                        filter: grayscale(0);
+                        transform: translateY(-10px);
+                     }
+                }
+            }
+        }
+    }
+} // end contact 
+
+// global 
+.btn-primary 
+{
+    background-color: $colorbtn;
+    border: $colorbtn;
+}
+
+.up 
+{
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    transition: 1s ease;
+    animation: slowly 1s ease infinite;
+    transform: translateY(0);
+    @keyframes slowly {
+        0% {
+            transform: translateY(0)
+        }
+
+        60% {
+            transform: translateY(-5px)
+        }
+
+        100% {
+            transform: translateY(-10px)
+        }
+    }
+
+    a {
+        color: white;
+    }
+}
+
+// responsive media: 
+@import './responsive.scss';

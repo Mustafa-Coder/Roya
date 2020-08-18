@@ -1,0 +1,224 @@
+
+
+
+// screen > 700px 
+@media (max-width:700px){
+    
+// container ./ home 
+.home 
+{
+    .habout {
+        text-align: left;
+        font-size: $fsize * 2 + 4;
+    }
+    
+    // line header 
+    .btn-primary   {
+        font-size: $fsize * 2 + 4;
+    }
+
+    .btn-black 
+    {
+        font-size: $fsize * 2 + 4;
+
+    }
+
+    
+}
+
+// section ./ service 
+.services 
+{
+    // margin
+    margin-bottom: 190px;
+    font-size: $fsize * 2 + 4;
+    .service
+    {
+        // service 
+        box-shadow: 0 0 10px $colortext;
+        transition: .4s ease; 
+    font-size: $fsize * 2 + 4;
+
+        &:hover 
+        {
+            transition: .4s ease; 
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+        // img 
+        img {
+            width: 90px;
+            height: 90px;
+            margin: 2% auto;
+        }
+
+        // header 
+        h2 
+        {
+            font-size: $fsize + 5;
+            text-align: center;
+            margin: 5px;
+        }
+        
+    } // end service 
+
+    // aboutme 
+    .aboutme ul 
+    {
+        list-style: none;
+
+        li {
+            font-size: $fsize * 2 + 4;
+            padding: 7px 15px;
+            margin: $mar;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $bg;
+            
+        }
+
+        a {
+
+            transition: .4s ease; 
+            &:hover 
+            {
+                transition: .4s ease;
+                color: $colorbtn !important;
+            }
+            
+        }
+    }
+
+    
+} // end services  
+
+
+.contact 
+{ // contact 
+    margin-bottom:120px;
+    font-size: $fsize * 2 + 4;
+    
+} // end contact 
+
+
+footer 
+{
+    font-size: $fsize * 2;
+
+}
+
+}
+
+
+
+// screen > 400px 
+@media (max-width:400px){
+    
+    // container ./ home 
+    .home 
+    {
+        .habout {
+            text-align: center;
+            font-size: $fsize * 2 + 4;
+        }
+        
+        // line header 
+        .btn-primary   {
+            font-size: $fsize * 2 + 4;
+        }
+    
+        .btn-black 
+        {
+            font-size: $fsize * 2 + 4;
+    
+        }
+    
+        
+    }
+    
+    // section ./ service 
+    .services 
+    {
+        // margin
+        margin-bottom: 190px;
+            text-align: center;
+            font-size: $fsize * 2 + 4;
+        .service
+        {
+            // service 
+            box-shadow: 0 0 10px $colortext;
+            transition: .4s ease; 
+                 font-size: $fsize * 2 + 4;
+    
+            &:hover 
+            {
+                transition: .4s ease; 
+                transform: translateY(-10px);
+                cursor: pointer;
+            }
+            // img 
+            img {
+                width: 90px;
+                height: 90px;
+                margin: 2% auto;
+            }
+    
+            // header 
+            h2 
+            {
+                font-size: $fsize + 5;
+                text-align: center;
+                margin: 5px;
+            }
+            
+        } // end service 
+    
+        // aboutme 
+        .aboutme ul 
+        {
+            list-style: none;
+    
+            li {
+                font-size: $fsize * 2 + 4;
+                padding: 7px 15px;
+                margin: $mar;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: $bg;
+                
+            }
+    
+            a {
+    
+                transition: .4s ease; 
+                &:hover 
+                {
+                    transition: .4s ease;
+                    color: $colorbtn !important;
+                }
+                
+            }
+        }
+    
+        
+    } // end services  
+    
+    
+    .contact 
+    { // contact 
+            text-align: center;
+            margin-bottom:120px;
+        font-size: $fsize * 2 + 4;
+        
+    } // end contact 
+    
+    
+    footer 
+    {
+        font-size: $fsize * 2;
+    
+    }
+    
+    }

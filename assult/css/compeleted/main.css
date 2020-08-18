@@ -1,0 +1,302 @@
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #f7f7f9;
+}
+
+.navbar {
+  padding: 0.5rem 7rem;
+}
+.navbar .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2000;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #ffffffc9;
+  padding: 6em;
+  font-size: 30px;
+  top: 0;
+}
+.overlay ul li a {
+  color: black;
+}
+
+.home .habout .btn-primary a {
+  transition: 0.4s ease;
+  background-color: #6c5ce7;
+  border: #6c5ce7;
+}
+.home .habout .btn-black a {
+  transition: 0.4s ease;
+  background: none;
+  color: none;
+}
+.home .photo-person {
+  border-radius: 0 !important;
+  overflow: hidden;
+  background: 0;
+  border: 0;
+}
+.home .photo-person img {
+  height: 450px;
+  width: 450px;
+}
+
+.services {
+  margin-bottom: 190px;
+}
+.services .service {
+  box-shadow: 0 0 10px #b2bec3;
+  transition: 0.4s ease;
+}
+.services .service:hover {
+  transition: 0.4s ease;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.services .service img {
+  width: 90px;
+  height: 90px;
+  margin: 2% auto;
+}
+.services .service h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 5px;
+}
+.services .aboutme ul {
+  list-style: none;
+}
+.services .aboutme ul li {
+  font-size: 24px;
+  padding: 7px 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f7f7f9;
+}
+.services .aboutme ul a {
+  transition: 0.4s ease;
+}
+.services .aboutme ul a:hover {
+  transition: 0.4s ease;
+  color: #6c5ce7 !important;
+}
+.services #mgraphic {
+  display: none;
+}
+.services #mwv {
+  display: none;
+}
+.services #mwd {
+  display: none;
+}
+.services .modals ul {
+  list-style-type: none;
+}
+.services .modals ul li {
+  margin: auto;
+}
+.services .modals ul li .tech {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(1);
+  transition: 0.4s ease;
+}
+.services .modals ul li .tech:hover {
+  transition: 0.4s ease;
+  filter: grayscale(0);
+  transform: translateY(-10px);
+}
+
+.contact {
+  margin-bottom: 120px;
+}
+.contact .contact {
+  width: 100%;
+}
+.contact ul {
+  list-style-type: none;
+}
+.contact ul li {
+  margin-left: 25px;
+}
+.contact ul li a img {
+  width: 70px;
+  filter: grayscale(1);
+  transition: 0.4s ease;
+}
+.contact ul li a img:hover {
+  transition: 0.4s ease;
+  filter: grayscale(0);
+  transform: translateY(-10px);
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  border: #6c5ce7;
+}
+
+.up {
+  position: fixed;
+  left: 15px;
+  bottom: 20px;
+  transition: 1s ease;
+  animation: slowly 1s ease infinite;
+  transform: translateY(0);
+}
+@keyframes slowly {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.up a {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .home .habout {
+    text-align: left;
+    font-size: 30px;
+  }
+  .home .btn-primary {
+    font-size: 30px;
+  }
+  .home .btn-black {
+    font-size: 30px;
+  }
+
+  .services {
+    margin-bottom: 190px;
+    font-size: 30px;
+  }
+  .services .service {
+    box-shadow: 0 0 10px #b2bec3;
+    transition: 0.4s ease;
+    font-size: 30px;
+  }
+  .services .service:hover {
+    transition: 0.4s ease;
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+  .services .service img {
+    width: 90px;
+    height: 90px;
+    margin: 2% auto;
+  }
+  .services .service h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+  }
+  .services .aboutme ul {
+    list-style: none;
+  }
+  .services .aboutme ul li {
+    font-size: 30px;
+    padding: 7px 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f7f7f9;
+  }
+  .services .aboutme ul a {
+    transition: 0.4s ease;
+  }
+  .services .aboutme ul a:hover {
+    transition: 0.4s ease;
+    color: #6c5ce7 !important;
+  }
+
+  .contact {
+    margin-bottom: 120px;
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 26px;
+  }
+}
+@media (max-width: 400px) {
+  .home .habout {
+    text-align: center;
+    font-size: 30px;
+  }
+  .home .btn-primary {
+    font-size: 30px;
+  }
+  .home .btn-black {
+    font-size: 30px;
+  }
+
+  .services {
+    margin-bottom: 190px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .services .service {
+    box-shadow: 0 0 10px #b2bec3;
+    transition: 0.4s ease;
+    font-size: 30px;
+  }
+  .services .service:hover {
+    transition: 0.4s ease;
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+  .services .service img {
+    width: 90px;
+    height: 90px;
+    margin: 2% auto;
+  }
+  .services .service h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+  }
+  .services .aboutme ul {
+    list-style: none;
+  }
+  .services .aboutme ul li {
+    font-size: 30px;
+    padding: 7px 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f7f7f9;
+  }
+  .services .aboutme ul a {
+    transition: 0.4s ease;
+  }
+  .services .aboutme ul a:hover {
+    transition: 0.4s ease;
+    color: #6c5ce7 !important;
+  }
+
+  .contact {
+    text-align: center;
+    margin-bottom: 120px;
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 26px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
